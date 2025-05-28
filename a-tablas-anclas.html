@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Anclas</title>
+    <style>
+        /*ESTO ES CSS*/
+        /*Selector por id*/
+        #titulo-muy-especial{
+            margin: 1px;
+        margin-top: 2px;
+        margin-bottom: 3px;
+        margin-left: 4px;
+        margin-right: 5px;
+        margin: 10px 20px 30px 40px;
+        margin-left: 1px;
+        margin-left: 100000px;
+        margin-left: 5px;
+        }
+
+        /*Selector por nombre de etiqueta*/
+        #titulo-muy-especial,h1,h2,h3,h4,h5,h6{
+            margin: 10px;
+            padding: 10px 20px 30px 40px;
+            padding-top: 1px;
+            padding-right: 2px;
+            padding-bottom: 3px;
+            padding-left: 4px;
+            padding: 15px;
+            border: green 1px solid;
+            border-color: green;
+            border-width: 14px;
+            border-style: dashed;
+            /*Top Right Bottom Left*/
+        }
+
+        /*Selector por nombre de clase*/
+        .lista-ordenada-mayusculas{
+            list-style-type: upper-alpha;
+        }
+
+        .lista-ordenada-romana{
+            list-style-type: upper-roman;
+        }
+
+        /*Selector por relacion de etiquetas*/
+        /*li tiene un hijo de tipo a*/
+        li>a{
+            background-color: orange;
+        }
+
+        ul>li:hover{
+            background-color: brown;
+        }
+
+        ul>li:first-child{
+            background-color: red;
+        }
+
+        ul> li:nth-child(4){
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo-muy-especial"
+    style="
+    color:white;
+    background-color:black;">Tablas y Anclas</h1>
+
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+
+    <a href="www.google.com" target="_blank">
+        google
+    </a>
+
+    <ul> <!--List Item-->
+        <li> <!--Unorderer List-->
+            <a href="/assets/index.html"> <!--Anchor-->
+            Home
+            </a></li>
+        <li>
+            <a href="/a-tablas-anclas.html">
+            Tablas y anclas
+            </a></li>
+        <li> <!--Unorderer List-->
+            <a href="/assets/index.html"> <!--Anchor-->
+                Home
+            </a></li>
+        <li>
+            <a href="/a-tablas-anclas.html">
+                Tablas y anclas
+            </a>
+        </li>
+    </ul>
+
+    <ol class="lista-ordenada-mayusculas">
+        <li>Lunes</li>
+            <ol class="lista-ordenada-romana">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        <li>Martes</li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        <li>Miercoles</li>
+   </ol>
+
+    <p>Submenu</p>
+    <p>Links internos (#)</p>
+    <ul>
+        <li><a href="#parrafo1">Ir a parrafo 1</a></li> 
+        <li><a href="#parrafo2">Ir a parrafo 2</a></li>
+    </ul>
+
+    <p id="parrafo1">Parrafo 1</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="parrafo2">Parrafo 2</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Imagenes</h2>
+        <img src="https://imagenes.20minutos.es/uploads/imagenes/2024/05/15/una-imagen-creada-por-la-herramienta-imagen-3-de-google.jpeg"     alt="Ardilla y bota">
+        <table>
+            <tr><!--Table row-->
+                <th><!--Table header-->
+                    Nombre
+                </th>
+                <th>
+                    Apellido
+                </th>
+                <th>
+                    Nota
+                </th>
+            </tr>
+            <tr><!--Table row-->
+                <td><!--Table detail-->
+                    Adrian
+                </td>
+                <td>Eguez</td>
+                <td>0</td>
+            </tr>
+            <tr><!--Table row-->
+                <td><!--Table detail-->
+                    Wendy
+                </td>
+                <td>Sarzosa</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+</body>
+</html>
